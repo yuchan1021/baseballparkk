@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img id="header_img" src="./img/야구로고.jpg" width="50px" height="50px" alt="">
+        <div class="header_main">
+            <a class="header_a" href="#">INFORMATION</a>
+            <a class="header_a" href="#">STATISICS</a>
+            <a class="header_a" href="#">RESERVATION</a>
+            <a class="header_a" href="#">GOODS</a>
+        </div>
+        <div class="header_login">
+            <a class="header_a" href="#">로그인</a>
+            <a class="header_a" href="#">회원가입</a>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+    <div class="schedule">
+        <h1>Game schedule</h1>
+        <div class="wrapper">
+            <div class="header">
+                <div class="nav">
+                  <button class="material-icons"> < </button>
+                  <p class="current-date">2024년 4월</p>
+                  <button class="material-icons"> > </span>
+                </div>
+            </div>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>일</li>
+                        <li>월</li>
+                        <li>화</li>
+                        <li>수</li>
+                        <li>목</li>
+                        <li>금</li>
+                        <li>토</li>
+                    </ul>
+                    <ul class="days">
+                        <li class="inactive">31</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li id="li">
+                            <input type="checkbox" id="modal">
+                                <label for="modal" class="modal-btn">20</label>
+                                    <div class="dialog">
+                                        <div class="tb">
+                                            <div class="inner" style="max-width:800px;">
+                                                <div class="top">
+                                                    <div class="title">아직 게임이 없습니다.</div>
+                                                        <label for="modal" class="close">&times;</label>
+                                                    </div>
+                                                    <div class="ct">
+                                                        <img src="./img/야구장 픽토그램.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        </li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li class="inactive">1</li>
+                        <li class="inactive">2</li>
+                        <li class="inactive">3</li>
+                        <li class="inactive">4</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div class="game">
+        <div class="team">
+            <div class="web">
+                <div class="team_web">
+                    <p id="web">team web</p>
+                    <img src="./img/야구로고.jpg" width="100px" height="100px" alt="">
+                </div>
+                <div class="num">
+                    <p>5</p>
+                </div>
+            </div>
+            <div class="design">
+                <div class="num">
+                    <p>4</p>
+                </div>
+                <div class="team_design">
+                    <p id="design">team design</p>
+                    <img src="./img/야구로고2.jpg" width="100px" height="100px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ranking">
+        <div id="league">
+            <input type="checkbox" id="league-1">
+            <label for="league-1" class="all-checkbox"><h2>나이트리그</h2></label>
+            <div>
+                <div>
+                    <div id="league-1-1">
+                        <input type="checkbox" id="checkbox-1-pitcher">
+                        <label for="checkbox-1-pitcher">투수순위</label>
+                        <p>
+                         1. 나일투<br>                                 
+                      2. 나이투<br>                         
+                      3. 나삼투<br>                  
+                      4. 나사투<br>                   
+                      5. 나오투<br>                  
+                      6. 나육투<br>                 
+                      7. 나칠투
+                        </p>
+                    </div>
+                    <div id="league-1-2">
+                        <input type="checkbox" id="checkbox-1-hitter">
+                        <label for="checkbox-1-hitter">타자순위</label>
+                        <p>
+                            1. 나일타<br>                        
+                            2. 나이타<br>                        
+                            3. 나삼타<br>                        
+                            4. 나사타<br>                        
+                            5. 나오타<br>                        
+                            6. 나육타<br>                        
+                            7. 나칠타 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="week-league">
+            <input type="checkbox" id="week-league-1">
+            <label for="week-league-1" class="all-checkbox"><h2>주말 리그</h2></label>
+            <div>
+                <div>
+                    <div id="week-league-1-1">
+                        <input type="checkbox" id="checkbox-2-pitcher">
+                        <label for="checkbox-2-pitcher">투수순위</label>
+                        <p>
+                        1. 주일투<br>                                 
+                        2. 주이투<br>                         
+                        3. 주삼투<br>                  
+                        4. 주사투<br>                   
+                        5. 주오투<br>                  
+                        6. 주육투<br>                 
+                        7. 주칠투
+                        </p>
+                    </div>
+                    <div id="week-league-1-2">
+                        <input type="checkbox" id="checkbox-2-hitter">
+                        <label for="checkbox-2-hitter">타자순위</label>
+                        <p>
+                            1. 주일타<br>                        
+                            2. 주이타<br>                        
+                            3. 주삼타<br>                        
+                            4. 주사타<br>                        
+                            5. 주오타<br>                        
+                            6. 주육타<br>                        
+                            7. 주칠타 
+                        </p>
+                    </div>
+             </div>
+            <div>
+  
+            </div>
+        </div>
+    </div>
+    <div id="night-league">
+        <input type="checkbox" id="night-league-1">
+        <label for="night-league-1" class="all-checkbox"><h2>새벽 리그</h2></label>
+        <div>
+            <div>
+                <div id="night-league-1-1">
+                    <input type="checkbox" id="checkbox-3-pitcher">
+                    <label for="checkbox-3-pitcher">투수순위</label>
+                    <p>
+                    1. 새일투<br>                                 
+                    2. 새이투<br>                         
+                    3. 새삼투<br>                  
+                    4. 새사투<br>                   
+                    5. 새오투<br>                  
+                    6. 새육투<br>                 
+                    7. 새칠투
+                    </p>
+                </div>
+                <div id="night-league-1-2">
+                    <input type="checkbox" id="checkbox-3-hitter">
+                    <label for="checkbox-3-hitter">타자순위</label>
+                    <p>
+                        1. 새일타<br>                        
+                        2. 새이타<br>                        
+                        3. 새삼타<br>                        
+                        4. 새사타<br>                        
+                        5. 새오타<br>                        
+                        6. 새육타<br>                        
+                        7. 새칠타 
+                    </p>
+                </div>
+         </div>
+        </div>
+    </div>
+</div>
+<div id="h2">
+    <h2 id="Top">주요 부문 Top5</h2>
+    <div id="taul">
+       <input type="radio" name="rank" id="taul-1">
+       <label for="taul-1" class="all-checkbox"><h2>타율</h2></label>
+       <div>
+        <div id="taul-2">
+            <input type="radio" name="rank" id="taul-name">
+            <label for="taul-name"></label>
+            <p>
+                (1위) 일타율, (2위) 이타율, (3위) 삼타율, (4위) 사타율, (5위) 오타율, (6위) 육타율, (7위) 칠타율
+            </p>
+        </div>
+       </div>
+</div>
+    <div id="homerun">
+       <input type="radio" name="rank" id="homerun-1">
+       <label for="homerun-1" class="all-checkbox"><h2>홈런</h2></label>
+       <div>
+        <div id="homerun-2">
+            <input type="radio" name="rank" id="taul-name">
+            <label for="taul-name"></label>
+            <p> 
+                (1위) 일홈런, (2위) 이홈런, (3위) 삼홈런, (4위) 사홈런, (5위) 오홈런, (6위) 육홈런, (7위) 칠홈런
+            </p>
+        </div>
+       </div>
+</div>
+<div id="winner">
+    <input type="radio" name="rank" id="winner-1">
+    <label for="winner-1" class="all-checkbox"><h2>다승</h2></label>
+    <div>
+     <div id="winner-2">
+         <input type="radio" name="rank" id="taul-name">
+         <label for="taul-name"></label>
+         <p>
+             (1위) 일다승, (2위) 이다승, (3위) 삼다승, (4위) 사다승, (5위) 오다승, (6위) 육다승, (7위) 칠다승
+         </p>
+     </div>
+    </div>
+</div>
+    <div id="EAR">
+        <input type="radio" name="rank" id="EAR-1">
+        <label for="EAR-1" class="all-checkbox"><h2>평균자책</h2></label>
+        <div>
+        <div id="EAR-2">
+            <input type="radio" name="rank" id="taul-name">
+            <label for="taul-name"></label>
+            <p>
+                (1위) 일평자, (2위) 이평자, (3위) 삼평자, (4위) 사평자, (5위) 오평자, (6위) 육평자, (7위) 칠평자
+            </p>
+        </div>
+        </div>
+    </div>
+    <div id="tal">
+        <input type="radio" name="rank" id="tal-1">
+        <label for="tal-1" class="all-checkbox"><h2>탈삼진</h2></label>
+        <div>
+         <div id="tal-2">
+             <input type="radio" name="rank" id="taul-name">
+             <label for="taul-name"></label>
+             <p>
+                 (1위) 일삼진, (2위) 이삼진, (3위) 삼삼진, (4위) 사삼진, (5위) 오삼진, (6위) 육삼진, (7위) 칠삼진
+             </p>
+         </div>
+        </div>
+ </div>
+ <div id="save">
+    <input type="radio" name="rank" id="save-1">
+    <label for="save-1" class="all-checkbox"><h2>세이브</h2></label>
+    <div>
+     <div id="save-2">
+         <input type="radio" name="rank" id="taul-name">
+         <label for="taul-name"></label>
+         <p>
+             (1위) 일세이, (2위) 이세이, (3위) 삼세이, (4위) 사세이, (5위) 오세이, (6위) 육세이, (7위) 칠세이
+         </p>
+     </div>
+    </div>
+</div>
+</div>
+    <footer>
+        <img id="footer_img" src="./img/야구로고.jpg" width="50px" height="50px" alt="">
+        <p id="footer_p">Copyright© Skills basgiteball park. All righs reserved.</p>
+        <div class="footer_text">
+            <p>Call: 142-3677</p>
+            <p>Email: help@skillsbaseballpark.com</p>
+            <p>Address: (12345) 서울특별시 중구 중복로 71</p>
+        </div>
+    </footer>
+</body>
+</html>

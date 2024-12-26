@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.header_main{
+    margin: 20px 150px;
+}
+
+.header_a{
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.header_a:hover{
+    font-weight: bolder;
+}
+
+.header_login{
+    margin: 20px 150px;
+}
+
+#header_img{
+    margin: 10px 150px;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 8s infinite linear;
+}
+
+.slide:nth-child(1) {
+    background-image: url(./img/야구장1.jpg);
+    animation-delay: 0;
+}
+.slide:nth-child(2) {
+    background-image: url(./img/야구장2.jpg);
+    animation-delay: -2s;
+}
+.slide:nth-child(3) {
+    background-image: url(./img/야구장3.jpg);
+    animation-delay: -4s;
+}
+.slide:nth-child(4) {
+    background-image: url(./img/야구장4.jpg);
+    animation-delay: -6s;
+}
+
+@keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    95% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+/* footer */
+footer{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: solid rgb(190, 190, 190) 1px;
+}
+
+footer p{
+    color: rgb(150, 150, 150);
+}
+
+#footer_img{
+    margin: 25px 250px;
+}
+
+.footer_text{
+    margin: 20px 250px;
+}
+
+#footer_p{
+    margin-top: 40px;
+}
+
+button {
+    /* button 요소에 기본적으로 설정되는 스타일 속성 초기화 */
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+   
+   /*#4 */
+.schedule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.wrapper {
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
+   
+  /*#6*/
+.wrapper .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.wrapper .nav .current-date {
+  font-size: 24px;
+  font-weight: 600;
+}
+  .wrapper .nav button {
+  width: 38px;
+  height: 38px;
+  font-size: 30px;
+  color: #878787;
+}
+
+h1{
+  padding: 50px;
+}
+
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.calendar .weeks li {
+  font-weight: 500;
+}
+.calendar .days {
+    margin-bottom: 20px;
+}
+.calendar ul li {
+    /*#8*/
+  width: calc(100% / 7);
+    /*#9*/
+  position: relative;
+}
+.calendar .days li {
+    /*#10*/
+  
+  margin-top: 30px;
+  cursor: pointer;
+}
+   
+  /*#11*/
+.days li.inactive {
+  color: #aaa;
+}
+
+.days li.active {
+  color: #fff;
+}
+.calendar .days li::before {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+.days li:hover::before {
+  background: #f2f2f2;
+}
+
+#modal{
+  display:none;
+}
+.modal-btn{
+  background-color: white; 
+  color: black; 
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer; 
+  border-radius: 4px; 
+}
+.dialog {
+  display:none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dialog>.tb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.dialog>.tb .inner {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.dialog .top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.dialog .title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dialog .ct {
+  max-height: 40vh;
+  height: 40vh;
+  overflow-y: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+  z-index: -2;
+}
+
+input[id="modal"]:checked + label + .dialog{
+    display: block;
+}
+.close{
+  font-size:25px;
+  cursor:pointer;
+}
+
+h1{color: navy;}
+
+.web{
+  height: 200px;
+  width: 800px;
+  background-color: rgb(15, 32, 75);
+  color: white;
+  padding: 20px;
+  text-align: left;
+  justify-content: left;
+  display: flex;
+}
+
+.design{
+  height: 200px;
+  width: 640px;
+  background-color: rgb(19, 22, 65);
+  color: white;
+  text-align: right;
+  padding: 20px;
+  justify-content: left;
+  display: flex;
+}
+
+.game{
+  justify-content: center;
+  display: flex;
+  font-size: 40px;
+  text-align: center;
+}
+
+.team{
+  justify-content: center;
+  display: flex;
+}
+
+#li{
+  margin-top: 20px;
+}
+
+.num{
+  justify-content: center;
+  display: flex;
+  opacity: 0;
+  transition: all 0.7s;
+  font-size: 70px;
+  margin-top: 50px;color: white;
+}
+
+.team_web{
+  width: 760px;
+}
+
+.team_design{
+  width: 600px;
+}
+
+
+.game:hover .num{
+  opacity: 1;
+}
+
+#league{
+  margin: 0px 20px;
+}
+
+#league input{
+  display: none;
+}
+#league-1-1 > input +label{
+  display: none;
+}
+#league-1-1 > input +label+p{
+  display: none;
+}
+#league-1:checked+label +div>div>input+label{
+  display: block;
+}
+#league-1:checked+label +div>div>#league-1-1>input+label{
+  display: block;
+}
+#checkbox-1-pitcher:checked +label +p{
+  display: block;
+}
+#checkbox-1-hitter + label{
+  display: none;
+}
+#checkbox-1-hitter +label + p{
+  display: none;
+}
+#league-1:checked +label+div>div>div>input+label{
+  display: block;
+}
+#checkbox-1-hitter:checked +label + p{
+  display: block;
+}
+#league-1 + label +div >div{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+#league-1 + label > h2{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+#league-1:checked p,label,div{
+  display: block;
+}
+
+#week-league{
+  margin: 0px 20px;
+}
+
+#week-league input{
+  display: none;
+}
+#week-league-1-1 > input +label{
+  display: none;
+}
+#week-league-1-1 > input +label+p{
+  display: none;
+}
+#week-league-1:checked+label +div>div>input+label{
+  display: block;
+}
+#week-league-1:checked+label +div>div>#week-league-1-1>input+label{
+  display: block;
+}
+#checkbox-2-pitcher:checked +label +p{
+  display: block;
+}
+#checkbox-2-hitter + label{
+  display: none;
+}
+#checkbox-2-hitter +label + p{
+  display: none;
+}
+#week-league-1:checked +label+div>div>div>input+label{
+  display: block;
+}
+#checkbox-2-hitter:checked +label + p{
+  display: block;
+}
+#week-league-1 + label +div >div{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+#week-league-1 + label > h2{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+#week-league-1:checked p,label,div{
+  display: block;
+}
+#ranking{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#night-league{
+  margin: 0px 20px;
+}
+
+#night-league input{
+  display: none;
+}
+#night-league-1-1 > input +label{
+  display: none;
+}
+#night-league-1-1 > input +label+p{
+  display: none;
+}
+#night-league-1:checked+label +div>div>input+label{
+  display: block;
+}
+#night-league-1:checked+label +div>div>#week-league-1-1>input+label{
+  display: block;
+}
+#checkbox-3-pitcher:checked +label +p{
+  display: block;
+}
+#checkbox-3-hitter + label{
+  display: none;
+}
+#checkbox-3-hitter +label + p{
+  display: none;
+}
+#night-league-1:checked +label+div>div>div>input+label{
+  display: block;
+}
+#checkbox-3-hitter:checked +label + p{
+  display: block;
+}
+#night-league-1 + label +div >div{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+#night-league-1 + label > h2{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+#night-league-1:checked p,label,div{
+  display: block;
+}
+
+#taul input{
+  display: none;
+}
+#taul-2 > input +label+p{
+  opacity: 0;
+  transition: 0.5s;
+}
+#taul-1:checked+label +div>div>input+label+p{
+  opacity: 1;
+}
+#Top{
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+
+#homerun input{
+  display: none;
+}
+#homerun-2 > input +label+p{
+  opacity: 0;
+  transition: 0.5s;
+}
+#homerun-1:checked+label +div>div>input+label+p{
+  opacity: 1;
+}
+#h2{
+  text-align: center;
+}
+#winner input{
+  display: none;
+}
+#winner-2 > input +label+p{
+  opacity: 0;
+  transition: 0.5s;
+}
+#winner-1:checked+label +div>div>input+label+p{
+  opacity: 1;
+}
+#EAR input{
+  display: none;
+}
+#EAR-2 > input +label+p{
+  opacity: 0;
+  transition: 0.5s;
+}
+#EAR-1:checked+label +div>div>input+label+p{
+  opacity: 1;
+}
+#tal input{
+  display: none;
+}
+#tal-2 > input +label+p{
+  opacity: 0;
+  transition: 0.5s;
+}
+#tal-1:checked+label +div>div>input+label+p{
+  opacity: 1;
+}
+#save input{
+  display: none;
+}
+#save-2 > input +label+p{
+  opacity: 0;
+  transition: 0.5s;
+}
+#save-1:checked+label +div>div>input+label+p{
+  opacity: 1;
+}
